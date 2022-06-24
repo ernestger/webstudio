@@ -1,0 +1,36 @@
+.about-partners{
+    background-image: url("../img/partners.png");
+    padding-top: 70px;
+    padding-bottom: 54px;
+    color: #fff;
+}
+.about-partners-block{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.about-partners-item{
+    grid-column: span 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.about-partners-item-picture{
+    margin: 0 auto 30px;
+    flex-grow: 1;
+}
+.about-partners-title{
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+.about-partners-item-text span{
+    color: #F88500;
+    font-weight: 800;
+}
+.about-partners-item-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    text-align: center;
+}

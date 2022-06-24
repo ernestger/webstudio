@@ -1,0 +1,83 @@
+.home-callback{
+    background-color: #171A1A;
+    padding: 9px 53px;
+ 
+}
+
+.home-callback .container{
+    justify-content: space-between;
+    display: flex;
+}
+
+.home-callback-left-list > *{/*для всех внутренних элементов*/
+    display: inline-block;
+}
+
+.home-callback-left-title{
+    color: #6F7A8B;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 31px;
+    position: relative;
+}
+
+.home-callback-left-title::after{
+    content: "";/*пустота*/
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 1px;
+    width: 221px;
+    background-color: #2D3038;
+}
+
+.home-callback-left-list li{
+    color: #6F7A8B;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.home-callback-left-list li span{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.home-callback-right-phone{
+    font-size: 28px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+    display: inline-block;/*чтобы margin-top сработал*/
+    text-align: center;
+}
+
+.home-callback-right-appliction{
+    width: 260px;
+    height: 44px;
+    background: #F88500;
+    border-radius: 0px 5px;
+    margin-top: 16px;
+    font-weight: 800;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.home-callback-right-10min{
+    color: #6F7A8B;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+    max-width: 560px;
+}
+
+.home-callback-left-list span{
+    margin-right: 5px;
+}
+
+.home-callback-left-list{
+    column-count: 3;/*разбиваем на 3 колонки*/
+}
+

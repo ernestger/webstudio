@@ -1,0 +1,98 @@
+:root{/*создаем переменную, оболочку*/
+--transition: all 0.3s ease-in-out;
+}
+.navigation .container{
+    display: flex;/*чтобы элементы выровнялись в одну линию*/
+    justify-content: space-between;
+}
+.menu{
+    display: flex;/*выровнять пункты меню по горизонтали*/
+}
+.icons{
+    display: flex;
+    background: rgba(196, 196, 196, 0.25);
+    height: 33px;
+    border-radius: 70px;
+    align-items: center;
+}
+.navigation-logo{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 17px;
+}
+.navigation-logo span{
+    display: block;
+}
+.navigation{
+    position:absolute;
+    left: 47px;
+    top: 0;
+    right: 47px;
+    z-index: 1000;/*максимальная прозрачнось*/
+    border-bottom: 1px solid rgba(255, 255, 255, 255, 0.1);/*rgba идет потому что с прозрачностью*/
+    padding: 42px 0 28px 0;
+}
+.navigation-logo{
+font-family: Raleway;
+font-size: 17px;
+font-weight: 700;
+letter-spacing: 0em;
+text-align: left;
+color: #fff;
+text-transform: uppercase;
+}
+.navigation-logo span{
+font-family: Raleway;
+font-size: 12px;
+font-weight: 400;
+letter-spacing: 0.24em;
+text-align: left;
+letter-spacing: 0.24em;
+text-transform:none;
+color: rgba(255, 255, 255, 0.45);
+margin-top: 5px;
+margin-left: 20px;
+}
+.menu li a{
+    color:#fff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: var(--transition);/*вызов переменной transition*/
+    font-weight: 500;
+}
+.menu li .active{
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 0px 5px;
+}
+.menu li a:hover{
+    background: rgba(196, 196, 196, 0.2);
+}
+.icons img{
+    margin: 5px 12px;
+}
+.home-slider__title{
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 68px;
+    margin-bottom: 15px;
+}
+.home-slider__link{
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+background-color: #F88500;
+padding: 6px 16px;
+border-radius: 0px 5px;
+display: inline-block;/*т.к. ссылка элементы линейный, чтобы отработал margin-bottom нудно дать блочный элемент*/
+margin-bottom: 25px;
+}
+.home-slide__text{
+    width: 414px;
+    background: rgba(32, 35, 40, 0.9);
+    border-radius: 0px 10px;
+    padding: 15px 22px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+}

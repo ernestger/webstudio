@@ -1,0 +1,89 @@
+.homeslider{
+height: 100vh;
+min-height: 580px;
+max-height: 630px;
+background-color: dark;
+color:#fff;
+position: relative;
+}
+.home-slider__slide{
+background-size: cover;/*чтоьбы растянуть картинку*/
+display: flex;
+align-items: center;
+padding: 0 10px;
+}
+.navigation-logo img{
+    width: 15px;
+    height: 15px;
+    display: inline-block;/*чтобы картинка была в одну линию*/
+    margin-right: 5px;
+}
+.menu li+li{/*+ li означает что свойтва будут применяться начиная со второго li*/
+margin-left: 10px;
+margin-right: 10px;
+}
+.menu li a{
+    padding: 7.5px 16px;
+}
+
+.home-slider__bottom{
+    display:flex;
+	align-items:center;
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 440px;
+    background-color: #202328;
+    z-index: 1;
+    right: 0;
+    border-radius: 10px;
+    padding: 45px 40px 45px 15px;
+    font-size: 12px;
+    color: #59606C;
+}
+
+.home-slider{
+    position: relative;
+}
+
+.home-slider__pagination{
+    width: 25%;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;    
+}
+
+.home-slider__scrollbar{
+    width: 75%;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.home-slider__nav{
+    width: 25%;
+    position: relative;
+}
+
+.home-slider__pagination b{
+    color: #818B9D;
+    font-size: 15px;
+}
+
+.home-slider__pagination span{
+    color: #59606C;
+    font-size: 12px;
+    margin: 5px 8px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 1px;
+    height: 28px;
+    margin: 8px;
+    vertical-align: middle;/*чтобы линия была по середине*/
+
+}
+
+.home-slider__prev::after, .home-slider__next::after {
+    font-size: 14px;
+    color: #818B9D;
+
+}

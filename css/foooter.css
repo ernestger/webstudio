@@ -1,0 +1,120 @@
+.footer{
+    background: #171A1A;
+    padding: 70px 0;
+    color: #fff;
+}
+.footer svg{
+    width: 18px;
+    height: 18px;
+    fill: #fff;/*фоновая заливка для svg*/
+}
+.footer svg path{
+    fill: #fff;
+}
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);/*8 блоков по 1й фракции*/
+    column-gap: 36px;
+}
+
+.footer-logo{
+    grid-column: span 3;
+}
+.footer-column{
+    grid-column: span 1;
+}
+.footer-column.footer-column-last{
+    grid-column: span 3;
+}
+
+.footer-logo-link{
+    margin-bottom: 40px;
+    display: inline-flex;/*чтобы отработал margin в ссылке*/
+    flex-wrap: wrap;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 0px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.footer-logo-link span{
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0px;
+    letter-spacing: 0.24em;
+    color: rgba(255, 255, 255, 0.45);
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.footer-logo-img{
+    margin-right: 7px;
+    position: relative;
+    top: -7px;
+}
+
+.footer-logo-title{
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-logo p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 170%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-title-menu{
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.footer-title-menu::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -20px;
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #F88500;
+    border-radius: 0px 5px;
+}
+.footer-menu a{
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.footer-menu li{
+    line-height: 30px;
+}
+
+.footer-menu a:hover{
+    color: #F88500;
+}
+
+.footer-social-media-title{
+    margin-bottom: 43px;
+}
+
+.footer-social-media-description{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 170%;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 36px;
+}
+
+.footer-block-social a{
+    margin-right: 10px;
+    display: inline-flex;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 5px;
+}

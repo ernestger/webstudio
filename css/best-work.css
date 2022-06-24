@@ -1,0 +1,153 @@
+.best-work{
+    background-color:#FAFAFA;
+    border-bottom: 3px solid #E4E6E8;
+    padding-bottom: 61px;
+}
+
+.best-work-top{
+    background-color: #202328;
+    padding-top: 63px;
+    padding-bottom: 160px;
+    color: #FFFFFF;
+}
+
+.container-best-work{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 66px;
+}
+
+.best-work-left{
+    flex-basis: 45%;/*аналог width для flex elements*/
+    border-right: 1px solid #2D3038;
+    padding-right: 48px;
+}
+
+.best-work-right{
+    flex-basis: 45%;
+    padding-left: 48px;
+}
+
+.best-work-block a{
+    background-color: #fff;
+    display: block;/*т.к. ссылка элемент линейный*/
+    /*height: 100%;/*чтобы все 3 блока были в одну линию выравнивались и растягивались*/
+}
+
+.best-work-bottom{
+    justify-content: space-between;
+    display: flex;
+    column-gap: 20px;/*расстояние между колонками*/
+    margin-top: -130px;/*подняли весь блок отрицательным образом*/
+    color: #000;
+}
+
+.best-work-block__top{
+    position: relative;
+}
+
+.best-work-block__top::after, .best-work-block__top::before{
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-image: url("../img/triangle-top.svg");/*заливаем иконкой*/
+    background-repeat: no-repeat;
+    background-position: 25px 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, background-position 0.5s ease-out;/*свойство анимации расширения скобок*/
+}
+.best-work-block__top::after{
+   transform:rotate(180deg);/*поворот на 180*/
+}
+
+.best-work-block a:hover .best-work-block__top::after,.best-work-block a:hover .best-work-block__top::before{
+    opacity: 1;
+    background-position:20px 20px;
+}
+address{
+    color:#989DA5;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 170%;
+    margin-bottom: 5px;
+}
+address::before{
+    content: "";
+    background-image: url("../img/mapmarker.svg");
+    width: 12px;
+    height: 15px;
+    display: inline-block;/*чтобы картинка была на уровн с текстом*/
+    margin-right: 11px;
+}
+
+.best-work-block__bottom li a{
+    font-size: 20px;
+    font-weight: 700;
+    color:#000;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    line-height: 20px;
+    line-height: 1.28;
+}
+
+.best-work-block__top img{
+    display: block;
+}
+
+.best-work-block__bottom-link li a::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-image: url("../img/dot.svg");
+    background-repeat: repeat-y;/*чтобы повторить точку по оси Y */
+    background-position: 5px 10px;
+    left: 0;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+.best-work-block__bottom {
+    padding: 25px 25px;
+    background: #fff;
+}   
+
+.best-work-bottom:hover .best-work-block__bottom-link li a::after{
+    background-image: url("../img/dotactive.svg");
+}
+.best-work-bottom{
+    padding-bottom: 45px;
+}
+.best-work-block__bottom{   
+    transition: all 0.3s ease-in-out;
+}
+.best-work-bottom:hover .best-work-block__bottom{
+    border-bottom-color:  #F88500;/*меняем цвет рамки*/
+}
+
+.button-more{
+    text-align: center;
+}
+.button-more a{
+    display: inline-flex;/*кнопка будет занимать ширину только по контенту*/
+    background: #F88500;
+    justify-content: center;
+    width: 170px;
+    height: 44px;
+    padding: 12px 30px;
+    border-radius: 0px 5px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 145%;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.best-work-block{
+    border-bottom: 3px solid #E4E6E8; 
+}
