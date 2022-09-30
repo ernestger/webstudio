@@ -18,3 +18,10 @@ img{/*чтобы картинки были адаптивные*/
 main{
     overflow: hidden;
 }
+button{
+    border:none !important;
+    outline: none !important;
+}
+input,textarea{
+    outline: none;
+}

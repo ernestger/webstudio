@@ -1,0 +1,108 @@
+.services{
+    padding: 70px 62px;
+}
+.services-title{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 25px;
+}
+.services-subtitle{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 170%;
+    text-align: center;
+    color: #999999;
+    max-width: 550px;
+    margin: 0 auto 50px;
+}
+.about-service-block{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.about-service-block-item{
+    grid-column: span 1;
+    display: flex;
+    gap: 35px;
+}
+.about-service-block-item-left{
+    flex-basis: 50%;
+}
+.about-service-block-item-right{
+    flex-basis: 50%;
+}
+.about-service-title{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 15px;
+}
+.about-service-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    color: #7E7E7E;
+}
+.about-service-title a{
+    color: #333;
+    transition: all 0.5s ease-in-out;
+}
+.about-service-block-item{
+    border: 1px solid #E4E6E8;
+    /*align-items: center;/*чтобы левая часть была в середине правого блока*/
+    position: relative;
+}
+.about-service-block-item-left{
+    padding: 38px 35px;
+}
+.about-service-title a:hover{
+    color: #F88500;
+}
+.about-service-block-item::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform:translateY(-50%);/*чтобы было по середине*/
+    width: 3px;
+    height: 30px;
+    background-color: #E4E6E8;
+}
+.about-service-block-item img{
+    display: block;/*чделаем блочный, так как картинка изначально идет как линейная, а мы делаем блочную*/
+    height: 100%;/*растягиваем картинку*/
+}
+.about-service-block-item:hover:after{
+    background-color: #F88500;
+}
+.apply-button{
+    text-align: center;
+    margin-top: 51px;
+    margin-bottom: 62px;
+}
+.apply-button-link{
+    justify-content: center;
+    align-items: center;
+    padding: 12px 30px;
+    gap: 10px;
+    position: absolute;
+    width: 200px;
+    height: 44px;
+    background: #F88500;
+    border-radius: 0px 5px;
+    font-size: 14px;
+    line-height: 145%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all 0.5s ease-in-out;/*easy in out  начинается анимации медленно, заканчивается быстро*/
+}
+.apply-button-link:hover{
+    background: chartreuse;
+}

@@ -1,0 +1,63 @@
+.about .container{
+    display: flex;/*чтобы выровнять в одну линию*/
+    gap: 56px;
+    padding: 70px 80px;
+    align-items: top;
+}
+.sidebar{
+    min-width: 255px;
+}
+.sidebar-title{
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 10px;
+    padding: 30px 40px;
+}
+.sidebar-menu{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+.sidebar-block{
+    background: #FAFAFA;
+}
+.sidebar-menu li a:hover{
+    background: #F88500;
+    color: #FFF;
+}
+.sidebar-menu li a{
+    display: block;
+    padding: 15px 40px;
+    color: #666;
+}
+.sidebar-menu li{
+    margin-bottom: 10px;
+}
+.about-block{
+    flex-grow: 1;/*чтобы он растянулся на всю доступную ширину*/
+}
+.about-right-title{
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 35px;
+    color: #333333;
+    margin-bottom: 25px;
+}
+.about-block-text{
+    margin-bottom: 35px;
+}
+.about-block-text{
+    margin-top: 35px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: #000;
+}
+.about-block-text:last-child{
+    margin-bottom: 70px;
+}

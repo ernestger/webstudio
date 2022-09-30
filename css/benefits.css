@@ -1,0 +1,78 @@
+.item-icon svg{
+    width: 50px;
+    height: 30px;
+}
+.benefits-block{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+.item-blok{
+    grid-column: span 1;
+}
+.benefits-block{
+    gap: 40px 20px;
+}
+.benefits-block.item{
+    text-align: center;
+}
+
+.benefits-title{
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 56px;
+}
+.item-icon svg{
+    fill: #F88500;
+}
+.item-icon{
+    margin-bottom: 15.78px;
+}
+.item-subtitle{
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 12px;
+}
+.item-description{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 170%;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+.item-link {
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 170%;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #333;
+}
+.item-blok:not(:nth-last-child(-n+3)){ /*кроме последних 3х элементов*/
+    border-bottom: 1px solid #E7E7E8;
+    padding-bottom: 44px;
+}
+.item-subtitle:hover{
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #F88500;
+}
+.item-link:hover{
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 170%;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #F88500;
+}

@@ -25,6 +25,9 @@ onlyInViewport: false
 },
 runCallbacksOnInit: true // чтобы сбросить слайд при каждом вызове
 })
+$(".arrow-right").on("click", function() { //функция кторая делает перемотку к той цифре к которой нужно
+  $("html").animate({ scrollTop: 0 }, "slow")
+});
 
 
 

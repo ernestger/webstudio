@@ -21,10 +21,10 @@
     grid-column: span 3;
 }
 .footer-column{
-    grid-column: span 1;
+    grid-column: span 2;
 }
 .footer-column.footer-column-last{
-    grid-column: span 3;
+    grid-column: span 2;
 }
 
 .footer-logo-link{
@@ -98,6 +98,7 @@
 
 .footer-menu a:hover{
     color: #F88500;
+    text-decoration: underline;
 }
 
 .footer-social-media-title{
@@ -117,4 +118,49 @@
     display: inline-flex;
     border: 1px solid rgba(255, 255, 255, 0.7);
     padding: 5px;
+}
+.three-lines{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+    fill: #E4E6E8;
+    gap: 10px;/*отступ при display flex*/
+}
+    
+.three-lines svg{
+    width:25px; 
+    height:5px;   
+}
+.three-lines svg:hover{
+    fill: #F88500;
+    cursor: pointer;
+}
+
+.footer-column.second{
+    grid-column: span 1;
+}
+
+.arrow-right{
+    width: 50px;
+    height: 50px;
+    background-color: #F88500;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-block-social svg{
+    fill: #fff;
+    opacity: 0.5;
+}
+.footer-block-social svg:hover{
+    stroke: #F88500;
+}
+
+.footer-block-social a:hover{
+    background-color: #F88500;
 }

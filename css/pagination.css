@@ -1,0 +1,30 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 82px;
+    align-items: center;
+    gap: 20px;
+}
+.pagination ul{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.pagination a{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #C4C4C4;
+}
+.pagination a.active{
+    background: #F88500;
+    border-radius: 0px 5px;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+}
