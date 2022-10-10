@@ -129,4 +129,111 @@
     .home-slider__title{
         font-size: 40px;
     }
+    .footer-logo{
+        grid-column: span 8;
+    }
+}
+@media (max-width:576px){
+    .footer-column.footer-column-last{/*чтобы отработало 2 класса убираем пробел и даем точку*/
+        grid-column: span 6;
+    }
+    .footer-column{
+        margin-bottom: 30px;
+    }
+    .footer-column.second {
+        grid-column: span 2;
+    }
+    .menu{
+        /*display: none;/*скрыть меню*/
+        position: fixed;/*чтобы меню будет зафиксирован и не будет смещаться*/
+        left:0;
+        top:0;
+        box-shadow: 5px 0 15px -5px rgb(0 0 0 / 80%);
+        max-width: 300px;
+        width: 80%;/*чтобы меню не перекрыла наш сайт когда будет открывать*/
+        height: 100vh;/*меню на весь экран, vh будет брать всю высоту с каждлго девайса*/
+        flex-direction: column;
+        background-color: darkgrey;
+        transform: translateX(-150vw);/*100vw это ширина меню, а 150 выводим за экран*/
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;/*мы будем анимировать все за 0.5 секунды, ип аннимации eas in out*/
+    }
+    .open{/*класс чтобы открыть меню*/
+        transform: translateX(0);
+    }
+    .hamburger{
+        display: block;/*показать гамбургер меню*/
+    }
+    .icons{
+        display: none;
+    }
+    .menu li+li{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .menu li a{
+        padding: 0;
+        line-height: 40px;
+        font-size: 15px;
+    }
+    .menu{
+        padding: 25px;
+    }
+    .menu li{
+        line-height: 25px;
+        
+    }
+    .best-work-bottom{
+        flex-wrap: wrap;
+    }
+    .best-work-block{
+        width: 100%;
+    }
+    .best-work-block__top img{
+        width: 100%;/*чтобы растянуть картинку*/
+    }
+}
+@media (max-width:480px){
+    .container-best-work{
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 10px;
+    }
+    .best-work-left{
+        flex-basis: 100%;
+        padding-right: 0;
+    }
+    .best-work-right{
+        flex-basis: 100%;
+        padding-left: 0;
+    }
+    .best-work-bottom{
+        flex-wrap: wrap;
+    }
+    .best-work-block{
+        width: 100%;
+    }
+    .materials{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .materials-left{
+        flex-basis: 100%;
+    }
+    .materials-right{
+        flex-basis: 100%;
+    }
+    .arrow-right{
+        width: 20px;
+        height: 25px;
+        right: 70px;
+    }
+    .home-callback{
+        padding: 15px 15px;
+    }
+}
+@media (max-width:480px){
+    .hamburger-box{
+        left: 25px;
+    }
 }
