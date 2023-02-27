@@ -1,0 +1,37 @@
+.our-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.our-clients-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 50px;
+}
+.our-clients-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.our-clients-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+.our-clients-link:hover svg {
+  fill: #2196f3;
+}
+.our-clients-link:hover {
+  border-color: #2196f3;
+}
+.our-clients-link svg {
+  transition: all 0.3s ease-in-out;
+  width: 40px;
+  height: 40px;
+}

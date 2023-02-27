@@ -1,0 +1,32 @@
+.effective-decision-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-bottom: 30px;
+}
+.effective-decision .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 600px;
+}
+.effective-decision-block{
+    margin: auto;
+}
+.effective-decision{
+    background-color: #2F303A;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.5)), url("../img/effective\ decision.png");/*linear gradient чтобы плашку сделать прозрачной*/
+    background-size: cover;/*чтобы картинка растягивалась*/
+    background-repeat: no-repeat;/*если картинка будет маленькая, чтобы картинки не повторялись*/
+}
+
+.effective-decision-block{
+    max-width: 696px;
+}
+
+.effective-decision-order{
+    width: 200px;
+    height: 50px;
+}

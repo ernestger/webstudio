@@ -1,9 +1,29 @@
 .container{
-    max-width: 1120px;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
 }
 body{
-background-color: #fff;
-font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.btn{
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 4px;
+}
+.btn-blue{
+    background-color: #2196F3;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+}
+.btn-blue:hover{
+    background-color: #fff;
+    color: #2196F3;
 }

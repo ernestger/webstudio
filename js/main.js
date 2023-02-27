@@ -1,43 +1,27 @@
-const homeSlider = new Swiper('.swiper', {
-  speed: 800,
-  effect: 'fade',
-  centeredSlides: true,
-  pagination:{
-  el: '.home-slider__pagination',
-  type: 'custom',
-  renderCustom:function (swiper, current, total){ // текущий слайд и сколько всего слайдов
-  let indT = total >= 10 ? total : `0${total}` // если total меньше 10, то добавляем 0 впереди
-  let indC = total >= 10 ? current : `0${current}` // если total меньше 10, то добавляем 0 впереди
-  return `<b>${indC}</b><span></span>${indT}`
-  },
-  },
-  scrollbar: {
-    el: '.home-slider__scrollbar',
-draggable: true // ползунок можно двигать и он интерактивный
-},
-navigation: {
-prevEl: '.home-slider__prev',
-nextEl: '.home-slider__next'
-},
-keyboard: { // чтобы перелистывать слайды на клавиатуре
-enabled: true,
-onlyInViewport: false
-},
-runCallbacksOnInit: true // чтобы сбросить слайд при каждом вызове
-})
-$(".arrow-right").on("click", function() { //функция кторая делает перемотку к той цифре к которой нужно
-  $("html").animate({ scrollTop: 0 }, "slow")
-});
+const button = document.querySelector('.effective-decision-order'); //открываем окно через кнопку
+const modalbutton = document.querySelector('.modal'); //само модальное окно
+const buttonclose = document.querySelector('.modal-close'); //закрываем окно
+console.log(modalbutton);
+button.onclick = function () {
+  modalbutton.classList.remove('hidden'); //чтоб появилось модальное окно, был класс hiden
+}; //по клику модального окна вызываем фукнцию
 
+modalbutton.onclick = function () {
+  modalbutton.classList.add('hidden'); //чтобы закрывалось окно при клике на плашку
+};
 
-let menu=document.querySelector(".menu")
-const btn=document.querySelector(".hamburger")//создаем переменную
-btn.onclick=function(){//мы берем кнопку кликаем и по клику вызываем функцию
-this.classList.toggle("is-active")//ссылка на то что кликаем, toggle добавляет класс,при повторном клике убирает
-menu.classList.toggle("open")/*чтобы появлялось меню*/
-}
+modalbutton.querySelector('.modal-window').onclick = function (event) {
+  //внутри плашки находим модальное окно и по нему щелкаем
+  event.stopPropagation(); //чтобы окно не закрывалось при нажатии внутри него,отмена погружения в js, чтобы событие не погружалось и тогда модальное окно внутри не будет погружаться
+};
+buttonclose.onclick = function () {
+  modalbutton.classList.add('hidden');
+};
 
-
-
-
-
+let menu = document.querySelector('.menu');
+const btn = document.querySelector('.hamburger'); //создаем переменную
+btn.onclick = function () {
+  //мы берем кнопку кликаем и по клику вызываем функцию
+  this.classList.toggle('is-active'); //ссылка на то что кликаем, toggle добавляет класс,при повторном клике убирает
+  menu.classList.toggle('open'); /*чтобы появлялось меню*/
+};

@@ -1,0 +1,76 @@
+.our-team-class {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #212121;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.our-team {
+  background: #f5f4fa;
+  padding-bottom: 94px;
+}
+.our-team-block {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /*auto-fit, вместо 4,1fr чтобы при мобильном виде автоматом изменялось кол-во картинок+minmax*/
+  gap: 30px;
+}
+.team-block-img {
+  display: block;
+  margin-bottom: 30px;
+}
+.team-block-content {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #212121;
+  margin-bottom: 10px;
+}
+.team-block-description {
+  color: #757575;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 16px;
+}
+.team-block {
+  background: #fff;
+}
+.team-block-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #212121;
+  margin-bottom: 10px;
+}
+.team-block-social a:hover {
+  background: #2196f3;
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.team-block-social a svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: all 0.5s ease-in-out;
+}
+.team-block-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+.team-block-social a:hover svg {
+  fill: #fff;
+}

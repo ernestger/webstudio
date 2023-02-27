@@ -1,0 +1,151 @@
+.modal {
+  position: fixed;
+  left: 0; /*чтобы была позиция фиксированная, прижимаем плашку ко всем сторонам*/
+  top: 0; /*чтобы была позиция фиксированная, прижимаем плашку ко всем сторонам*/
+  bottom: 0; /*чтобы была позиция фиксированная, прижимаем плашку ко всем сторонам*/
+  right: 0; /*чтобы была позиция фиксированная, прижимаем плашку ко всем сторонам*/
+  background: rgba(0, 0, 0, 0.2);
+  display: flex; /*один из способов центрирования когда ребенок margin autp*/
+}
+.modal-window {
+  margin: auto; /*один из способов центрирования когда родитель flex*/
+  background-color: #fff;
+  padding: 10px 40px 40px 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.hidden {
+  display: none;
+}
+.modal-close svg {
+  width: 11px;
+  height: 11px;
+  transition: 0.5s ease-in-out;
+}
+.modal-block-close {
+  display: flex;
+  justify-content: flex-end; /*перемещаем иконку в правую часть*/
+}
+.modal-close {
+  /*кнопка это линейный элемент, к нему не можем применять brder bottom,поэтому делаем элементом блочным display flex, align item center justify-content: center*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #000 !important;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.modal-close svg:hover {
+  fill: #2196f3;
+}
+.modal-form-item {
+  position: relative;
+  margin-bottom: 10px;
+}
+.modal-form-item svg {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(
+    -50%
+  ); /*чтобы иконки в вертикально плоскости были точно по середине данных input*/
+  fill: #212121;
+  transition: 0.5s ease-in-out;
+}
+.modal-item-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 0.5s ease-in-out;
+}
+.modal-form {
+  margin-top: 12px;
+}
+.modal-form-block label {
+  display: block; /*делаем линейным элементон чтобы отработал margin bottom*/
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #757575;
+  margin-bottom: 4px;
+}
+.modal-item-textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  transition: 0.5s ease-in-out;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #212121;
+}
+.modal-close {
+  position: relative;
+  top: -5px;
+  left: 35px;
+}
+.modal-submit-button {
+  width: 200px;
+  height: 50px;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.modal-submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.modal-terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.modal-terms-link {
+  color: #2196f3;
+  text-decoration: underline;
+}
+.modal-item-textarea::placeholder {
+  /*обращаемся к дефолтному тексту в textarea*/
+  opacity: 1;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-item-input:hover {
+  border-color: #2196f3;
+  cursor: pointer;
+}
+.modal-form-item:hover svg {
+  fill: #2196f3;
+}
+.modal-item-textarea:hover {
+  border-color: #2196f3;
+  cursor: pointer;
+}

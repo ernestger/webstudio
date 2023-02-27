@@ -1,274 +1,142 @@
-@media (max-width:1366px) {
-   .container{
-    max-width: 100% !important;
-    padding: 15px 15px !important;    
-}
-.about-right-title{
-    margin-bottom: 40px;
-    font-size: 23px;
-}
-}
-@media(max-width:1200px){
-    .sidebar{
-        max-width: 100%;
-        width: 100%;
-        margin-top: 30px;
-    }
-    .about-block{
-        max-width: 100%;
-        width: 100%;
-    }
-    .container{
-        flex-wrap: wrap;/*включаем режим многокологочного переноса*/
-        row-gap: 30px;
-    }
-    .sidebar-menu li {
-        margin-bottom: 0;
-    }
-    .about-right-image img{
-        width: 100%;
-    }
-}
-@media (max-width:992px){
-    .icons{
-        width: 100%;
-        max-width: 250px;
-        margin-top: 15px;
-    }
-    .navigation .container{
-        flex-wrap: wrap;/*чтобы перенести иконки на другую строку*/
-    }
-    .home-callback-left-list{
-        column-count: 2;
-    }
-    .home-callback-right-phone{
-        font-size: 18px;
-    } 
-    .home-callback-right-appliction{
-        font-size: 10px;
-        height: 30px;
-    }
-}
-@media (max-width:768px){
-    .about-partners-block{
-        grid-template-columns: repeat(2,1fr);
-    }
-    .advantages .container{
-        flex-wrap: wrap;  
-    }
-    .advantages-left{
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    .advantages-right{
-        width: 100%;
-    }
-    .advantages-caption-block{
-        height: 65px;
-    }
-    .advantages-caption-block-left{
-        font-size: 30px;
-    }
-    .advantages-caption-block-right{
-        font-size: 18px;
-    }
-    .home-callback .container{
-        flex-direction: column;
-    }
-    .home-callback-right-10min{
-        max-width: 100%;
-    }
-    .home-callback-right-appliction{
-        width: 200px;
-        margin-left: 40px;
-    }
-    .best-work-left p{
-        font-size: 14px;
-    }
-    .best-work__title{
-        font-size: 14px;
-    }
-    .best-work__subtitle{
-        font-size: 14px;
-    }
-    .best-work-block__bottom address{
-        font-size: 12px;
-    }
-    .best-work-block__bottom-link li a{
-        font-size: 14px;
-    }
-    .best-work-block__bottom{
-        padding: 15px 15px;
-    }
-    .advantages {
-        padding-top: 10px;
-    }
-    .advantages-right-paragraph{
-        font-size: 18px;
-    }
-    .about-partners-block{
-        grid-template-columns:1fr;
-    }
-    .blog{
-        padding-top: 10px;
-    }
-    .blog-title{
-        margin-bottom: 10px;
-    }
-    .blog-block-item{
-        flex-basis: 100%;
-    }
-    .blog-block{
-        flex-wrap: wrap;
-    }
-    .footer-logo{
-        grid-column: span 4;
-    }
-    .home-slide__text{
-        width: 100%;
-    }
-    .home-slider__bottom{
-        max-width: 100%;
-        padding: 15px;
-    }
-    .home-callback{
-        margin-top: 15px;
-    }   
-    .sidebar{
-        margin-top: 50px;
-    }
-    .sidebar-title{
-        margin-bottom: 0;
-    }
-    .navigation{
-        left: 15px;
-        right: 15px;
-        padding: 15px;
-    }
-    .navigation-logo{
-        margin-bottom: 10px;
-    }
-    .menu{
-        margin-bottom: 10px;
-    }
-    .home-slider__title{
-        font-size: 40px;
-    }
-    .footer-logo{
-        grid-column: span 8;
-    }
-    .sidebar-title{
-        padding-left: 0;
-    }
-    .benefits-block {
-        grid-template-columns: 1fr;
-    }
-    .item-blok{
-        width: 100%;
-    }
+@media (max-width: 1366px) {
 }
 
-@media (max-width:576px){
-    .footer-column.footer-column-last{/*чтобы отработало 2 класса убираем пробел и даем точку*/
-        grid-column: span 6;
-    }
-    .footer-column{
-        margin-bottom: 30px;
-    }
-    .footer-column.second {
-        grid-column: span 2;
-    }
-    .menu{
-        /*display: none;/*скрыть меню*/
-        position: fixed;/*чтобы меню будет зафиксирован и не будет смещаться*/
-        left:0;
-        top:0;
-        box-shadow: 5px 0 15px -5px rgb(0 0 0 / 80%);
-        max-width: 300px;
-        width: 80%;/*чтобы меню не перекрыла наш сайт когда будет открывать*/
-        height: 100vh;/*меню на весь экран, vh будет брать всю высоту с каждлго девайса*/
-        flex-direction: column;
-        background-color: darkgrey;
-        transform: translateX(-150vw);/*100vw это ширина меню, а 150 выводим за экран*/
-        overflow: hidden;
-        transition: all 0.5s ease-in-out;/*мы будем анимировать все за 0.5 секунды, ип аннимации eas in out*/
-    }
-    .open{/*класс чтобы открыть меню*/
-        transform: translateX(0);
-    }
-    .hamburger{
-        display: block;/*показать гамбургер меню*/
-    }
-    .icons{
-        display: none;
-    }
-    .menu li+li{
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .menu li a{
-        padding: 0;
-        line-height: 40px;
-        font-size: 15px;
-    }
-    .menu{
-        padding: 25px;
-    }
-    .menu li{
-        line-height: 25px;
-        
-    }
-    .best-work-bottom{
-        flex-wrap: wrap;
-    }
-    .best-work-block{
-        width: 100%;
-    }
-    .best-work-block__top img{
-        width: 100%;/*чтобы растянуть картинку*/
-    }
+@media (max-width: 1200px) {
+  .header .container {
+    padding: 24px 15px;
+  }
+  .effective-decision-title {
+    font-size: 35px;
+  }
+  .our-service {
+    padding-bottom: 15px;
+  }
+  .our-team {
+    padding-bottom: 15px;
+  }
+  .our-clients {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .our-clients-block {
+    gap: 15px;
+  }
+  .follow-email-title {
+    margin-top: 20px;
+  }
+
+  .footer .container {
+    padding-bottom: 25px;
+  }
+  .our-projects-blocks {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .menu {
+    column-gap: 15px;
+  }
+  .header-info a:first-child {
+    margin-right: 15px;
+  }
+  .header-info {
+    font-size: 12px;
+  }
 }
-@media (max-width:480px){
-    .container-best-work{
-        flex-wrap: wrap;
-        gap: 30px;
-        margin-bottom: 10px;
-    }
-    .best-work-left{
-        flex-basis: 100%;
-        padding-right: 0;
-    }
-    .best-work-right{
-        flex-basis: 100%;
-        padding-left: 0;
-    }
-    .best-work-bottom{
-        flex-wrap: wrap;
-    }
-    .best-work-block{
-        width: 100%;
-    }
-    .materials{
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-    .materials-left{
-        flex-basis: 100%;
-    }
-    .materials-right{
-        flex-basis: 100%;
-    }
-    .arrow-right{
-        width: 20px;
-        height: 25px;
-        right: 70px;
-    }
-    .home-callback{
-        padding: 15px 15px;
-    }
+@media (max-width: 992px) {
 }
-@media (max-width:480px){
-    .hamburger-box{
-        left: 25px;
-    }
+@media (max-width: 768px) {
+  .effective-decision-title {
+    font-size: 30px;
+  }
+  .effective-decision .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 400px;
+  }
+  .effective-decision-title {
+    line-height: 35px;
+  }
+  .our-team-class {
+    padding-top: 25px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .header-info {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 5px 0 15px -5px rgb(0 0 0 / 80%);
+    max-width: 300px;
+    width: 80%;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #fff;
+    transform: translateX(-150vw);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    padding: 48px 80px 48px 40px;
+  }
+  .open {
+    transform: translateX(0);
+  }
+  .navigation .menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  .menu__item {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .our-projects-blocks {
+    grid-template-columns: 1fr; /*чтобы блок занимал 100% ширины*/
+  }
+  .our-service-block {
+    flex-wrap: wrap;
+  }
+  .our-service-block-images {
+    width: 100%;
+    /*чтобы по одному блоку было*/
+  }
+  .our-service-block-images img {
+    width: 100%;
+  }
+  .our-team {
+    margin-top: 30px;
+  }
+  .footer-form {
+    flex-wrap: wrap;
+  }
+  .footer-button-email {
+    width: 100%;
+  }
+  .footer-email-input {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .our-clients-link {
+    width: 100%;
+  }
+  .effective-decision-title {
+    font-size: 20px;
+  }
+  .our-service-title {
+    font-size: 20px;
+  }
+  .our-team-class {
+    font-size: 20px;
+  }
+  .our-clients-title {
+    font-size: 20px;
+  }
 }
